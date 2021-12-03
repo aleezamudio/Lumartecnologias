@@ -1,6 +1,9 @@
 import React from 'react'
 import {AppBar,Toolbar,Typography,IconButton,Button} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
+import {Icon} from '@material-ui/core'
+import CartWidget from './CartWidget'
+
 
 const NavBar = () => {
     return (
@@ -8,11 +11,14 @@ const NavBar = () => {
             <AppBar>
                 <Toolbar>
                     <IconButton color="inherit" aria-label="menu">
-                        <MenuIcon/>
+                    <CartWidget/>
                     </IconButton>
+
                     <Typography variant='h6'>
                     LumarTecnologías
                     </Typography>
+                    
+
                     <Button variant="text" color="inherit">
                         Electródomesticos
                     </Button>
@@ -24,6 +30,7 @@ const NavBar = () => {
                     <Button variant="text" color="inherit">
                         Home
                     </Button>
+                    
                 </Toolbar>
 
             </AppBar>
