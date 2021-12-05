@@ -1,9 +1,10 @@
 import React from 'react'
-import {AppBar,Toolbar,Typography,IconButton,Button} from '@material-ui/core'
+import {AppBar,Toolbar,Typography,IconButton,Button, makeStyles} from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import {Icon} from '@material-ui/core'
 import CartWidget from './CartWidget'
 
+const useStyles= makeStyles() 
 
 const NavBar = () => {
     return (
